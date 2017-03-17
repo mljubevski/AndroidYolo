@@ -16,7 +16,7 @@
         android:layout_marginEnd="16dp">
 
         <fragment
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:name="com.mljubevski.yolo.fragments.LoginFragment"
             tools:layout="@layout/fragment_login"
