@@ -8,6 +8,87 @@
     <include
         layout="@layout/include_login_header" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:id="@+id/activity_register_usernameEditText"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_below="@id/activity_register_usernameEditText"
+            android:id="@+id/activity_register_emailEditText"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_below="@id/activity_register_emailEditText"
+            android:id="@+id/activity_register_passwordEditText"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@color/primaryDark"
+            android:layout_below="@id/activity_register_passwordEditText"
+            android:id="@+id/activity_register_registerButton"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateOnly="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@id/activity_register_registerButton"
+            android:layout_alignBottom="@id/activity_register_registerButton"
+            android:id="@+id/activity_register_progressBar"/>
+
+    </RelativeLayout>
+
      
 
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

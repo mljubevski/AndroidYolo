@@ -13,7 +13,8 @@ import com.mljubevski.yolo.fragments.LoginFragment;
 public class LoginNarrowActivity extends BaseActivity implements LoginFragment.Callbacks
 {
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login_narrow);
