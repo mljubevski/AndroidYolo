@@ -17,8 +17,8 @@ public class MainNavDrawer extends NavDrawer
     {
         super(activity);
 
-        addItem(new ActivityNavDrawerItem(MainActivity.class, "Inbox", null, R.drawable.ic_action_unread, 0));
-        addItem(new BasicNavDrawerItem("Logout", null, R.drawable.ic_action_backspace, 0) {
+        addItem(new ActivityNavDrawerItem(MainActivity.class, "Inbox", null, R.drawable.ic_action_unread, R.id.include_main_nav_drawer_topItems));
+        addItem(new BasicNavDrawerItem("Logout", null, R.drawable.ic_action_backspace, R.id.include_main_nav_drawer_bottomItems) {
             @Override
             public void onClick(View view)
             {
