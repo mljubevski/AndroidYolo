@@ -1,7 +1,6 @@
 package com.mljubevski.yolo.views;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
