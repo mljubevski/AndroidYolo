@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.mljubevski.yolo.R;
 import com.mljubevski.yolo.infrastructure.YoloApplication;
+import com.mljubevski.yolo.views.NavDrawer;
 
 /**
  * Created by Milos on 12-Mar-17.
@@ -18,6 +19,7 @@ public class BaseActivity extends AppCompatActivity
 {
     protected YoloApplication application;
     protected Toolbar toolbar;
+    protected NavDrawer navDrawer;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -39,5 +41,11 @@ public class BaseActivity extends AppCompatActivity
             setSupportActionBar(toolbar);
         }
 
+    }
+
+    protected void setNavDrawer(NavDrawer draver)
+    {
+        this.navDrawer = draver;
+        this.navDrawer.create();
     }
 }
