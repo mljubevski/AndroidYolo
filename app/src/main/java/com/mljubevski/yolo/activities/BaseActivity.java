@@ -1,8 +1,13 @@
 package com.mljubevski.yolo.activities;
 
 import android.os.Bundle;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+
+import com.mljubevski.yolo.R;
 import com.mljubevski.yolo.infrastructure.YoloApplication;
 
 /**
@@ -12,6 +17,7 @@ import com.mljubevski.yolo.infrastructure.YoloApplication;
 public class BaseActivity extends AppCompatActivity
 {
     protected YoloApplication application;
+    protected Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -19,5 +25,19 @@ public class BaseActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         application = (YoloApplication)getApplication();
+    }
+
+
+    @Override
+    public void setContentView(@LayoutRes int layoutResID)
+    {
+        super.setContentView(layoutResID);
+        toolbar = (Toolbar) findViewById(R.id.include_toolbar);
+
+        if(toolbar != null)
+        {
+            setSupportActionBar(toolbar);
+        }
+
     }
 }

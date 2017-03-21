@@ -28,6 +28,7 @@
         android:text="Login"
         android:layout_below="@id/fragment_login_password"
         android:background="@color/primaryDarker"
-        android:id="@+id/fragment_login_loginButton"/>
+        android:id="@+id/fragment_login_loginButton"
+        android:textColor="#ffffff"/>
 
 </RelativeLayout>

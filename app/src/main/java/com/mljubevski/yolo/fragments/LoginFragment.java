@@ -47,6 +47,18 @@ public class LoginFragment extends BaseFragment implements View.OnClickListener
         callbacks = (Callbacks)context;
     }
 
+
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        callbacks = (Callbacks)activity;
+    }
+
+
+
+
     @Override
     public void onDetach()
     {
